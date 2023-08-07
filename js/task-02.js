@@ -17,7 +17,7 @@ arr.map((item) => {
 
   const liIngredients = document.createElement('li');
 
-  liIngredients.classList.add = ("item")
+  liIngredients.classList.add('item');
   liIngredients.textContent = item;
   arrIngredients.push(liIngredients)
   
