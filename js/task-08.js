@@ -8,11 +8,11 @@ function handlerSubmit(evt){
     const {
         elements: {email, password}} = evt.currentTarget;
        
-        if(email.value === "" || password === ""){
+        if(email.value === "" || password.value === ""){
 
-            return alert("Please fill out of all the fields!")
+            return alert("Please fill out of all the fields!");
         }
 
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    console.log({Email: email.value, Password: password.value});
     evt.currentTarget.reset();
 }

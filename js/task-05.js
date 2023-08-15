@@ -8,8 +8,9 @@ function handlerInput(evt) {
 
     if(evt.currentTarget.value.trim()){
      output.textContent = evt.currentTarget.value;
-    } else {
+    }else{
       output.textContent = "Anonymous";
     }
-  };
+  }
 
+  handlerInput()
