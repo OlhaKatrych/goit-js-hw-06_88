@@ -3,15 +3,13 @@ const input = document.querySelector('#name-input')
 const output = document.querySelector('#name-output')
 
 input.addEventListener('input', handlerInput)
+ 
+function handlerInput(evt) {
 
-function handlerInput(evt){
-
-   output.textContent = evt.currentTarget.value.trim();
-
-    if(evt.currentTarget.value.trim() === " "){
-
-       output.textContent = "Anonymous";
+    if(evt.currentTarget.value.trim()){
+     output.textContent = evt.currentTarget.value;
+    } else {
+      output.textContent = "Anonymous";
     }
+  };
 
-  
-}
